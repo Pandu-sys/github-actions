@@ -3,7 +3,7 @@ name: conditions
 on: 
   push:
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: ${{ github.workflow }}-${{ github.ref }} 
   cancel-in-progress: false # we can trigger workflow multiple times, upcoming workflow should wait 
 
 jobs: # stages
