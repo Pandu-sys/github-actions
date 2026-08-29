@@ -28,4 +28,4 @@ jobs: # stages
 
       - name: access another step variables
         run: |
-           echo: "course: $course"
+           echo "course: $course"
