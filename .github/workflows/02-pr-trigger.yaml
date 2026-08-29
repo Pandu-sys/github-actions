@@ -1,4 +1,4 @@
-name: hello-world
+name: PR trigger
 # triggrs
 on: 
   pull_request:
