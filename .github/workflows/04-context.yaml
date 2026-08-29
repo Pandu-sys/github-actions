@@ -10,7 +10,7 @@ env:
 jobs: # stages
   first-job: # stage
    outputs: 
-      version: "{{ steps.version.outputs.image-version }}"
+      version: "${{ steps.version.outputs.image-version }}"
    runs-on: ubuntu-latest # agent, ubuntu-latest is github hosted github runner
    steps:
       - name: print env variable
