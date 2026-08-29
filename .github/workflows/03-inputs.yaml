@@ -1,0 +1,33 @@
+name: inputs demo
+# triggrs
+on: 
+  push:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+        - info
+        - warning
+        - debug
+      tags:
+        description: 'Test scenario tags'
+        required: false
+        type: boolean
+      environment:
+        description: 'Environment to run tests against'
+        type: environment
+        required: true
+jobs: # stages
+  my-job: # stage
+    runs-on: ubuntu-latest # agent, ubuntu-latest is github hosted github runner
+    steps:
+      - name: step-1
+        run: echo "Hello World!"
+      - name: step-2
+        run: echo "i am learning Github Actions!"
+      
+      
