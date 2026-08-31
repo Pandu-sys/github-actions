@@ -9,4 +9,4 @@ jobs:
         id: good-morning
         uses: Pandu-90s/workflows/.github/actions/gm@main
         with:
-          persion: "Somesh"
+          person: "Somesh"
