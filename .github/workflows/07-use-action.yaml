@@ -10,3 +10,7 @@ jobs:
         uses: Pandu-90s/workflows/.github/actions/gm@main
         with:
           person: "Somesh"
+      
+      - name: get the output 
+        run: |
+          echo "{{ steps.good-morning.outputs.greeting-status }}"
